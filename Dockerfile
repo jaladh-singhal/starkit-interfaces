@@ -10,7 +10,7 @@ RUN curl -O https://raw.githubusercontent.com/starkit/starkit/master/starkit_env
 RUN conda env create -n starkit --file ./starkit_env3.yml
 
 # Activate created environment 
-RUN source activate starkit
+RUN conda activate starkit
 
 # Grab requirements.txt
 # TODO: Remove commit tag from starkit when fixed & might need to install it in release phase
