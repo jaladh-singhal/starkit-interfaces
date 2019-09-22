@@ -1,5 +1,8 @@
 FROM heroku/miniconda
 
+# Update conda
+RUN conda update -y conda
+
 # Grab environment file for starkit
 RUN curl -O https://raw.githubusercontent.com/starkit/starkit/master/starkit_env3.yml
 
