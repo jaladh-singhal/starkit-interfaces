@@ -7,7 +7,7 @@ RUN conda update -y conda
 RUN conda install nomkl
 
 # Grab environment file for starkit
-RUN curl -O https://raw.githubusercontent.com/starkit/starkit/master/starkit_env3.yml
+RUN wget https://raw.githubusercontent.com/starkit/starkit/master/starkit_env3.yml -q
 
 # Create conda environment for starkit
 RUN conda env create -n starkit --file ./starkit_env3.yml
