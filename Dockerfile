@@ -1,7 +1,10 @@
-FROM heroku/miniconda
+FROM continuumio/miniconda
 
 # Update conda
 RUN conda update -y conda
+
+# Remove (large file sizes) MKL optimizations.
+RUN conda install nomkl
 
 # Grab environment file for starkit
 RUN curl -O https://raw.githubusercontent.com/starkit/starkit/master/starkit_env3.yml
