@@ -1,2 +1,2 @@
-git+https://github.com/starkit/starkit.git@afc3fe6
+-e git+git://github.com/starkit/starkit@afc3fe6#egg=starkit
 voila
