@@ -32,4 +32,5 @@ RUN wget https://zenodo.org/record/2557923/files/phoenix_t4000_10000_w3000_9000_
 
 # Activate starkit env & run the interactive_spectrum.ipynb as voila app
 # TODO: Run interfaces/ dir as app & enhance its look by using voila templates
+# commenting for a test commit
 CMD /bin/bash -c 'source activate starkit && voila --port=$PORT --no-browser interactive_spectrum.ipynb'
