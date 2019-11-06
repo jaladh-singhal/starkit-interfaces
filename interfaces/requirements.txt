@@ -1,2 +1,3 @@
 git+https://github.com/starkit/starkit@afc3fe6#egg=starkit
+bqplot==0.11.8
 voila
